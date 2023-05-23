@@ -85,8 +85,12 @@ a.navbar-brand {
 }
 
 .vektor {
-    width: 40%;
     justify-content: center;
+}
+
+.vektor img {
+    width: 400px;
+    height: auto;
 }
 
 .berita {
@@ -114,14 +118,50 @@ form {
     margin-bottom: 100px;
 }
 
+/* CSS KUESIONER */
+.judul {
+    padding-top: 5%;
+}
+
+.no {
+    margin: 0;
+    text-align: end;
+}
+
+
 /* CSS ISI KUESIONER */
 .next {
     width: 20%;
     margin-left: 10px;
+    padding: 0;
 }
 
-@media screen and (max-width: 834px) {
-    .btn-login {
+/* Media Query */
+/* Beranda */
+@media (max-width :414px) {
+    
+    .content-beranda {
+        display: inline;
+    }
+    .vektor{
+        display: none;
+    }
+
+    .text-beranda {
         width: 100%;
     }
+
+    .navbar-nav .btn-login {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        display: inline;
+    }
+
+    .footer .kontak {
+        padding: 0;
+    }
+
 }
