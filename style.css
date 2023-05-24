@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+/* --------------------------------------------------------CSS NAVBAR------------------------------------------------ */
 nav.navbar {
     background-color: #fff;
     border-bottom: 1px solid #c9c9c9;
@@ -27,15 +28,63 @@ nav.navbar {
     margin: 20px;
 }
 
-.btn-login {
-   margin-bottom: 0;
-   margin-top: 5px;
-   background-color:#0d6efd;
-   border: none;
-   color: #fff;
-   height: 40px;
-   width: 60px;
-   border-radius: 5px;
+a.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-nav a {
+    font-size: 20px;
+    text-align: center;
+}
+
+.berita {
+    text-align: center;
+}
+
+.berita-chart {
+    text-align: center;
+}
+
+.cart-content {
+    padding: 1px solid black;
+}
+
+.btn {
+    margin-bottom: 100px;
+}
+
+/* -------------------------------------------------CSS INDEX---------------------------------------------------------- */
+.text-beranda {
+    width: 60%;
+}
+
+.text-study {
+    font-size: 50px;
+    font-weight: 600;
+    background-color: #0A2647;
+    border-radius: 40px;
+    padding:2px 20px;
+    color: #fff;
+}
+
+.text-tracer {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.content-beranda {
+    text-align: start;
+    padding-top: 150px;
+    margin-bottom: 60px;
+}
+
+.vektor {
+    justify-content: center;
+}
+
+.vektor img {
+    width: 400px;
+    height: auto;
 }
 
 .btn-login-index {
@@ -48,77 +97,7 @@ nav.navbar {
     border-radius: 5px;
  }
 
-a.navbar-brand {
-    font-size: 24px;
-}
-
-.navbar-nav a {
-    font-size: 20px;
-    text-align: center;
-}
-
-.content {
-    padding-top: 200px;
-    text-align: center;
-}
-
-.content-beranda {
-    text-align: start;
-    padding-top: 150px;
-    margin-bottom: 60px;
-}
-
-.text-study {
-    font-weight: 600;
-    background-color: #0A2647;
-    border-radius: 30px;
-    padding:2px 20px;
-    color: #fff;
-}
-
-.text-tracer {
-    font-weight: 600;
-}
-
-.text-beranda {
-    width: 60%;
-}
-
-.vektor {
-    justify-content: center;
-}
-
-.vektor img {
-    width: 400px;
-    height: auto;
-}
-
-.berita {
-    text-align: center;
-}
-
-.berita-chart {
-    text-align: center;
-}
-
-.kontak img {
-    width: 200px;
-    height: 50px;
-}
-
-.cart-content {
-    padding: 1px solid black;
-}
-
-form {
-    padding-top: 100px;
-}
-
-.btn {
-    margin-bottom: 100px;
-}
-
-/* CSS KUESIONER */
+/* --------------------------------------------------------CSS KUESIONER---------------------------------------------- */
 .judul {
     padding-top: 5%;
 }
@@ -128,16 +107,44 @@ form {
     text-align: end;
 }
 
+form {
+    padding-top: 100px;
+}
 
-/* CSS ISI KUESIONER */
+/* --------------------------------------------------------ISI KUESIONER-------------------------------------------- */
+.content {
+    padding-top: 130px;
+    text-align: center;
+}
+
 .next {
     width: 20%;
     margin-left: 10px;
     padding: 0;
 }
 
-/* Media Query */
-/* Beranda */
+/* ---------------------------------------------------------CSS FOOTER--------------------------------------------- */
+.kontak img {
+    width: 200px;
+    height: 50px;
+}
+
+.btn-login {
+    margin-bottom: 0;
+    margin-top: 5px;
+    background-color:#0d6efd;
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+ }
+
+
+
+/* ===================================================MEDIA QUERY===================================================  */
+
+/* ------------------------------------------------------BERANDA------------------------------------------------------ */
 @media (max-width :414px) {
     
     .content-beranda {
@@ -164,4 +171,34 @@ form {
         padding: 0;
     }
 
+    .text-beranda h1 {
+        font-size: 40px;
+    }
+
+    /* ----------------------KUESIONER---------------- */
+    .nmr-2 {
+        display: inline;
+        margin-top: 0px;
+    }
+
+    .nmr-2-input {
+        display: inline;
+    }
+
+    .nmr-2-input label {
+        width: 40vh;
+    }
+
+    .nmr-2-input input {
+        width: 40vh;
+    }
+
+    .nmr-3-text {
+        margin-bottom: 0;
+    }
+
+    .nmr-3 {
+        display: inline;
+        margin-top: 0;
+    }
 }
